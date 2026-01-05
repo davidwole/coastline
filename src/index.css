@@ -259,7 +259,7 @@ button:hover {
 }
 
 .hero {
-  background-image: url("src/assets/HeroImage.png");
+  background-image: url("https://res.cloudinary.com/dqf8qs0jk/image/upload/v1767591919/HeroImage_lv33ij.png");
   padding: 7rem 10rem;
   color: white;
 }
