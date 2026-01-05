@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100..900&display=swap");
+
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/Spartan-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/Spartan-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/Spartan-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/Spartan-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/Spartan-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Space Grotesk";
+  overflow-x: hidden;
+}
+
+button {
+  font-family: "Space Grotesk";
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  position: sticky;
+  top: 0;
+  background: white;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.header ul {
+  display: flex;
+  font-family: "Space Grotesk";
+}
+
+.header li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.header-logo {
+  font-family: Helvetica;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.footer {
+  background: #317e94;
+  color: rgb(255, 255, 255);
+  padding: 5rem 7.8125rem 0 5rem;
+}
+
+.footer-wrapper {
+  justify-content: space-between;
+  margin-bottom: 5.125rem;
+}
+
+.footer-links ul {
+  margin-right: 5.3125rem;
+  font-family: "Space Grotesk";
+  font-weight: 300;
+}
+
+.footer-links li {
+  margin-bottom: 1.5rem;
+}
+
+.footer-title {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.newsletter {
+  flex-direction: column;
+  font-family: "Space Grotesk";
+}
+
+.newsletter label {
+  margin-bottom: 1.5rem;
+}
+
+.newsletter input {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.9rem 1.5rem;
+  min-width: 16rem;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 5.125rem;
+}
+
+.hero {
+  background-image: url("src/assets/HeroImage.png");
+  padding: 7rem 10rem;
+  color: white;
+}
+
+.hero p,
+h1,
+button {
+  margin-block: 1.2rem;
+}
+
+.hero h1 {
+  font-family: "M PLUS 2", sans-serif;
+  font-weight: 900;
+  font-size: 7.5rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+}
+
+.hero button {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.hero button {
+  border: 1px solid white;
+  color: white;
+  background: transparent;
+  padding: 0.625rem 1.625rem;
+}
+
+.welcome-description {
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: center;
+  margin: 2rem auto;
+  width: 70.5rem;
+}
+
+.new-releases h2 {
+  font-size: 2rem;
+  margin-top: 8rem;
+  margin-inline: auto;
+  width: 70.5rem;
+}
+
+.release-card {
+  height: 484px;
+  width: 409px;
+  background: rgba(49, 126, 148, 0.6);
+  margin-inline: 2rem;
+  border-radius: 32px;
+  margin-block: 2rem;
+}
+
+.brand-showcase {
+  justify-content: center;
+  align-items: center;
+  max-width: 1255px;
+  margin: 10.4375rem auto;
+}
+
+.brand-showcase-image {
+  border-radius: 36px;
+  background-image: url("/src/assets/brandshowcase.jpg");
+  height: 27rem;
+  width: 37.8125rem;
+  background-size: cover;
+}
+
+.brand-showcase h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.brand-showcase-text {
+  width: 38.125rem;
+  margin-left: 2.5rem;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-top: 8rem;
+  margin-inline: auto;
+  width: 70.5rem;
+}
+
+.testimonials-card-wrapper {
+  justify-content: center;
+  margin-block: 3rem;
+}
+
+.testimonial-card {
+  width: 17.1875rem;
+  height: 21.875rem;
+  background: rgba(49, 126, 148, 0.6);
+  border-radius: 2rem;
+}
+
+.testimonial-card:not(:last-child) {
+  margin-right: 5.0625rem;
+}
+
+.flamengo {
+  background-image: url("/src/assets/Flamengo.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 85rem;
+  height: 33rem;
+  border-radius: 2rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
