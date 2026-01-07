@@ -186,7 +186,7 @@ button:hover {
 .header {
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2.5rem;
+  padding: 1rem 1.5rem;
   position: sticky;
   top: 0;
   background: white;
@@ -266,14 +266,14 @@ button:hover {
 
 .hero {
   background-image: url("https://res.cloudinary.com/dqf8qs0jk/image/upload/v1767591919/HeroImage_lv33ij.png");
-  padding: 2rem;
+  padding: 5rem 2rem;
   color: white;
 }
 
 .hero p,
-h1,
-button {
-  margin-bottom: 1.2rem;
+.hero h1,
+.hero button {
+  margin-bottom: 1.5rem;
 }
 
 .hero h1 {
@@ -299,17 +299,17 @@ button {
 }
 
 .welcome-description {
-  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-size: clamp(1.2rem, 4vw, 2rem);
   font-weight: 200;
   text-align: center;
   margin: 2rem auto;
+  padding-inline: 1rem;
 }
 
 .new-releases h2 {
   font-size: clamp(1.5rem, 4vw, 2rem);
-  margin-top: 8rem;
-  margin-inline: auto;
-  width: 80%;
+  margin-block: 3rem 2rem;
+  text-align: center;
 }
 
 .release-card {
@@ -321,10 +321,24 @@ button {
   margin-block: 2rem;
 }
 
+.products {
+  flex-direction: column;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.products img {
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  height: 17rem;
+}
+
 .brand-showcase {
   justify-content: center;
   align-items: center;
   max-width: 1255px;
+  flex-direction: column-reverse;
+  margin-bottom: 2rem;
 }
 
 .brand-showcase-image {
@@ -335,6 +349,15 @@ button {
   background-size: cover;
 }
 
+.brand-showcase-text {
+  text-align: center;
+  margin-block: 2rem;
+}
+
+.brand-showcase-text p {
+  font-size: clamp(1.2rem, 5vw, 2.5rem);
+}
+
 .brand-showcase h2 {
   font-size: clamp(1.8rem, 5vw, 2.5rem);
   margin-bottom: 2.5rem;
@@ -342,6 +365,7 @@ button {
 
 .testimonials h2 {
   font-size: 2rem;
+  text-align: center;
 }
 
 .testimonials-card-wrapper {
@@ -350,6 +374,8 @@ button {
 }
 
 .testimonial-card {
+  flex-direction: column;
+  justify-content: space-between;
   padding: 1rem;
   width: 17.1875rem;
   height: 21.875rem;
@@ -359,14 +385,10 @@ button {
 }
 
 .flamengo {
-  background-image: url("/src/assets/Flamengo.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 80%;
-  height: 10rem;
-  border-radius: 2rem;
-  margin: 0 auto;
-  margin-bottom: 3rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .review-stars {
@@ -380,7 +402,7 @@ button {
 }
 
 .testimonial-desc {
-  margin-bottom: 9rem;
+  margin-bottom: 9 rem;
 }
 
 .testimonial-customer {
@@ -393,10 +415,6 @@ button {
     display: none !important;
   }
 
-  .header {
-    justify-content: center;
-  }
-
   .mobile-flex {
     flex-direction: column;
   }
@@ -407,6 +425,16 @@ button {
 
   .testimonial-card {
     margin-bottom: 2rem;
+  }
+
+  .brand-showcase-image {
+    height: 18rem;
+    margin-bottom: 2rem;
+  }
+
+  .flamengo {
+    width: 96%;
+    margin: 2rem auto;
   }
 }
 
@@ -428,7 +456,19 @@ button {
     width: 409px;
   }
 
+  .products {
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .products img {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 0;
+  }
+
   .brand-showcase {
+    flex-direction: row;
     margin: 10.4375rem auto;
   }
 
@@ -440,6 +480,7 @@ button {
   .brand-showcase-text {
     width: 38.125rem;
     margin-left: 2.5rem;
+    text-align: left;
   }
 
   .testimonial-card:not(:last-child) {
@@ -457,15 +498,6 @@ button {
     margin-right: 5.3125rem;
   }
 
-  .flamengo {
-    width: 85rem;
-    height: 33rem;
-  }
-
-  .new-releases h2 {
-    width: 70.5rem;
-  }
-
   .hide-for-desktop {
     display: none !important;
   }
@@ -477,7 +509,7 @@ button {
   background: transparent;
   border: none;
   z-index: 1001;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -503,7 +535,7 @@ button {
 }
 
 .hamburger.open .bar:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
+  transform: translateY(-11px) rotate(-45deg);
 }
 
 /* Mobile Menu Styles */
@@ -516,7 +548,8 @@ button {
   background-color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 10rem;
+  /* align-items: center; */
   z-index: 1000;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
