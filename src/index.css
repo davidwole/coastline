@@ -436,6 +436,10 @@ button:hover {
     width: 96%;
     margin: 2rem auto;
   }
+
+  .flamengo img {
+    width: 100%;
+  }
 }
 
 @media (min-width: 801px) {
