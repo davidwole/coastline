@@ -399,7 +399,7 @@ button:hover {
 
 .testimonial-title {
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 2rem;
 }
 
@@ -410,6 +410,10 @@ button:hover {
 .testimonial-customer {
   align-items: center;
   justify-content: end;
+}
+
+.testimonial-customer img {
+  margin-right: 0.3rem;
 }
 
 @media (max-width: 800px) {
