@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "../assets/Logo.png";
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,7 +13,7 @@ export default function Header() {
         <li>Releases</li>
         <li>Categories</li>
       </ul>
-      <img src={Logo} alt="logo" />
+      <h1 className="header-logo">Coastline Nº</h1>
       <ul className="hide-for-mobile">
         <li>Account</li>
         <li>Bag</li>
