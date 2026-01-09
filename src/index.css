@@ -356,7 +356,8 @@ button:hover {
 }
 
 .brand-showcase-text p {
-  /* font-size: clamp(1.5rem, 4vw, 2rem); */
+  margin: auto;
+  width: 80%;
 }
 
 .brand-showcase h2 {
@@ -434,11 +435,6 @@ button:hover {
 
   .brand-showcase-text h2 {
     margin-bottom: 1.5rem;
-  }
-
-  .brand-showcase-text p {
-    margin: auto;
-    width: 80%;
   }
 
   .brand-showcase-image {
